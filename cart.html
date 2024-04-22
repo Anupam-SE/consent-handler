@@ -1,80 +1,92 @@
 <!DOCTYPE html>
- <html lang="en">
+<html lang="en">
   <head>
-   <title>Sample Configurator on same domain | cart</title>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-   <style>body {background-color: gray;}</style>
-
-   <!-- Google Tag Manager -->
-   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-   })(window,document,'script','dataLayer','GTM-PV67WTQF');</script>
-   <!-- End Google Tag Manager -->
-   
-   <script>
+    <title>Sample Configurator on same domain | cart</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PV67WTQF');</script>
+    <!-- End Google Tag Manager -->
+    
+    <script>
     parent.dataLayer.push({
-       "event": "page_view",
-       "business_divison": "sample_business_divison",
-       "business_unit": "sample_business_unit",
-       "configurator_id": "sample_configurator_id",
-       "configurator_name": "sample_configurator_name",
-       "digital_platform": "sample_digital_platform",
-       "digital_platform_country": "sample_digital_platform_country",
-       "environment": "sample_environment",
-       "page_category": "sample_page_category",
-       "page_language": "sample_page_language",
-       "page_sub_category": "sample_page_sub_category",
-       "page_sub_sub_category": "sample_",
-       "page_top_category": "sample_page_top_category",
-       "page_title": "sample_page_title",
-       "project_id": "sample_project_id",
-       "project_name": "sample_project_name",
-       "template": "sample_template"
-   });
-   </script>
-   
-  
+      "event": "page_view",
+      "business_divison": "sample_business_divison",
+      "business_unit": "sample_business_unit",
+      "configurator_id": "sample_configurator_id",
+      "configurator_name": "sample_configurator_name",
+      "digital_platform": "sample_digital_platform",
+      "digital_platform_country": "sample_digital_platform_country",
+      "environment": "sample_environment",
+      "page_category": "sample_page_category",
+      "page_language": "sample_page_language",
+      "page_sub_category": "sample_page_sub_category",
+      "page_sub_sub_category": "sample_",
+      "page_top_category": "sample_page_top_category",
+      "page_title": "sample_page_title",
+      "project_id": "sample_project_id",
+      "project_name": "sample_project_name",
+      "template": "sample_template"
+    });
+    </script>
   </head>
+  
   <body>
-   <!-- Google Tag Manager (noscript) -->
-   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PV67WTQF"
-   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-   <!-- End Google Tag Manager (noscript) -->
-   
-   <!-- Sample configurator Section -->
-   <div class="w3-container" id="about">
-     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">This is a sample configurator on the same domain | Cart Page</h3>
-     <a href="index.html" class="w3-button w3-black w3-section">Home Page</a>
-     <button class="w3-button w3-black w3-section" id="testCTA" onclick="testFunction()">Test CTA</button>
-   </div>
-   
-   <script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PV67WTQF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!-- Sample configurator Section -->
+    <div class="w3-container w3-gray" id="about">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Sample configurator on the same domain | Cart Page</h3>
+      <a href="index.html" class="w3-button w3-black w3-section">Go to Home Page</a>
+      <button class="w3-button w3-black w3-section" id="testCTA" onclick="testFunction()">Download Bill of Material</button>
+    </div>
+     
+    <script>
     function testFunction() {
-      parent.dataLayer.push({ ecommerce: null });
+      parent.dataLayer.push({ecommerce: null});
       parent.dataLayer.push({
-       "event":  "add_to_cart",
-       "ecommerce":  {
-        "currency": "USD",
-        "value": 16,
-        "items": [{
-          "item_id": "b55da",
-          "item_name": "Flexigen T-Shirt",
-          "price": "16.00",
-          "quantity": 1,
-          "item_brand": "Flexigen",
-          "item_category": "T-Shirts",
-          "item_variant": "red",
-          "index": 0,
-          "size": "M",
-          "custom_random": Math.random()
-        }]
-      }
-     });
+      "event": "add_to_cart",
+        "cta_name": "Add to cart",
+        "cta_location": "mainContentActionMenu",
+        "project_id": "842e0412-4cc5-46b2-863f-2b20ee869e8a",
+        "project_name": "Test_ThalassaEnclosures",
+        "ecommerce": {
+          "currency": "USD",
+          "value": 33,
+          "items": 
+          [{
+            "item_id": "f6be8",
+            "item_name": "Comverges T-Shirt",
+            "price": "33.00",
+            "quantity": 1,
+            "item_brand": "Comverges",
+            "item_category": "T-Shirts",
+            "item_variant": "red",
+            "configuration_id": "21772148-1cb9-4f44-8feb-598bc87ce58f",
+            "configuration_name": "Panel Builder"
+          }
+          {
+            "item_id": "bc823",
+            "item_name": "Fuelworks T-Shirt",
+            "price": "92.00",
+            "quantity": 1,
+            "item_brand": "Fuelworks",
+            "item_category": "T-Shirts",
+            "item_variant": "red",
+            "configuration_id": "21772148-1cb9-4f44-8feb-598bc87ce58f",
+            "configuration_name": "Panel Builder"
+          }]
+        }
+      });
     }
-   </script>
- </body>
+    </script>
+  </body>
 </html>
